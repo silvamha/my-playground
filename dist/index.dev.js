@@ -1,77 +1,61 @@
+"use strict";
+
 // <<<<<<< HEAD
 // const inputEl = document.getElementById("input-el");
 // const buttonEl = document.getElementById("button-el");
 // const ulEl = document.querySelector("ul");
-
 // const listItems = ["This is a list item"]; // Initial item
-
 // buttonEl.addEventListener("click", function () {
 //   const newItem = inputEl.value.trim();
-
 //   if (newItem !== "") {
 //     listItems.push(newItem); // Add the new item to the listItems array
-
 //     const liEl = document.createElement("li");
 //     liEl.textContent = newItem;
 //     ulEl.appendChild(liEl);
-
 //     inputEl.value = ""; // Clear the input element value
 //     console.log(listItems)
 //   }
 // });
-
-
-
-
 // const inputEl = document.getElementById("input-el");
 // const buttonEl = document.getElementById("button-el");
 // const ulEl = document.querySelector("ul");
-
 // const listItems = ["This is a list item"]; // Initial item
-
 // buttonEl.addEventListener("click", function () {
 //   const newItem = inputEl.value.trim();
-
 //   if (newItem !== "") {
 //     listItems.push(newItem); // Add the new item to the listItems array
-
 //     const liEl = document.createElement("li");
 //     liEl.textContent = newItem;
 //     ulEl.appendChild(liEl);
-
 //     inputEl.value = ""; // Clear the input element value
 //     console.log(listItems)
 //   }
 // });
 // >>>>>>> 00afe308ee1c88decaddf777f44f3f736b15c06d
-
-
 // Test Function Parameters and Arguments
-
 // Scenario 1
-const greeting = () =>{
-  console.log('Hello World! I can do a simple function!!!!')
-  return ('Hello World! I can do a simple function!!!!')
-}
-greeting()
+var greeting = function greeting() {
+  console.log('Hello World! I can do a simple function!!!!');
+  return 'Hello World! I can do a simple function!!!!';
+};
 
-// Scenario 2
-const squareNumber = (x) =>{
-  let anyNumber = x*x
-  console.log(anyNumber)
-  return anyNumber
-}
-squareNumber(10)
+greeting(); // Scenario 2
 
-// Scenario 3
-const totalPrice = (a, b) =>{
-  let finalPrice = a + b
-  console.log(finalPrice)
-  return finalPrice
-}
-totalPrice(10, 10)
+var squareNumber = function squareNumber(x) {
+  var anyNumber = x * x;
+  console.log(anyNumber);
+  return anyNumber;
+};
 
+squareNumber(10); // Scenario 3
 
+var totalPrice = function totalPrice(a, b) {
+  var finalPrice = a + b;
+  console.log(finalPrice);
+  return finalPrice;
+};
+
+totalPrice(10, 10);
 /**!SECTION - Function Exercises
  * 1. Simple Callback Function:
  * 
@@ -79,15 +63,8 @@ Task: Create a function processData that takes an array and a callback function.
  *
  */
 
-const processData = (arr, callback) => {
-  return arr.map(callback)
-}
+var processData = function processData(arr, callback) {
+  return arr.map(callback);
+};
 
-const doubleNumber = (number) =>{
-  return number * 2
-}
-
-let myVar = [10, 20, 30, 40]
-
-
-console.log(processData(myVar, doubleNumber))
+var doubleNumber = number;
