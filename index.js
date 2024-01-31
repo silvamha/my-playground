@@ -91,13 +91,38 @@ Customizability and Reusability: Callbacks allow you to write more generic funct
 Exercises with Callback Functions and APIs
 To practice using functions as parameters, especially in the context of APIs, we'll do three exercises:
 
-Simple Callback Function:
+1. Simple Callback Function:
 
 Task: Create a function processData that takes an array and a callback function. The callback function will process each element of the array. Test it by passing an array of numbers and a function that doubles each number.
-Using setTimeout with a Callback:
+
+2. Using setTimeout with a Callback:
 
 Task: Write a function that takes a message and a delay time as parameters. The function should use setTimeout to log the message to the console after the specified delay.
-Fetching Data from an API:
+
+3.Fetching Data from an API:
 
 Task: Write a function that makes an API call to https://jsonplaceholder.typicode.com/todos/1 (a test API) and logs the response. Use the fetch API and handle the response with a callback function.
  */
+
+// 1. Simple call back function
+
+const myArray =[1, 2, 3]
+
+
+
+
+// Test callback function
+const btnEl = document.querySelector('#btn-el')
+btnEl.addEventListener('click', function(){
+  console.log('I have been clicked!!!!')
+})
+
+let value = 1;
+
+const doSomething = (() => {
+  return value = 2;
+});
+
+console.log(value);
+
+doSomething()
