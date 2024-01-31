@@ -79,15 +79,42 @@ Task: Create a function processData that takes an array and a callback function.
  *
  */
 
+// Declare function with two arguments: array and callback function
+
 const processData = (arr, callback) => {
   return arr.map(callback)
 }
 
+
+// Declare the function that is to be used with call back and establish logic within function
 const doubleNumber = (number) =>{
   return number * 2
 }
 
 let myVar = [10, 20, 30, 40]
 
-
+// Log processata using array and call back functions
 console.log(processData(myVar, doubleNumber))
+
+
+/**!SECTION Function Exercises
+ * 2. Using setTimeout with a Callback:
+ * 
+Task: Write a function that takes a message and a delay time as parameters. The function should use setTimeout to log the message to the console after the specified delay.
+ */
+
+
+const delayMsg = (msg, callback) =>{
+  return setTimeout((msg) => {    
+  });
+}
+
+
+// Create call back function
+
+ const delay =  setTimeout(() => {
+  console.log('This is only a test')
+}, 2000);
+
+
+delayMsg("Testing the callback", delay)
